@@ -6,10 +6,8 @@
     <title>MangáVerse</title>
     <link rel="stylesheet" href="/front/css/style.css">
     <script src="/front/js/script.js"></script>
-    
 </head>
 <body>
-    
     <header>
         <div>
             <div class="menuList">
@@ -26,7 +24,6 @@
                 <spam id="login"> Sign in </spam>
             </div>
         </div>
-
         <div id="title">
             <h1>MangáVerse</h1>
         </div>
@@ -36,6 +33,32 @@
         <h2>Welcome to MangáVerse!</h2>
         <p>Your one-stop shop for all things manga.</p>
     </section>
+
+    <div id="card-container" class="card-container">
+        <div class="circle1"></div>
+        <div class="circle2"></div>
+        <div class="container">
+            <div class="log-card">
+                <p class="heading">Welcome Back</p>
+                <p>We are you to have you Again</p>
+                <div class="input-group">
+                    <p class="text">Username</p>
+                    <input class="input" type="username" placeholder="For Ex: Jayakrishna007">
+                    <p class="text">Password</p>
+                    <input class="input" type="password" placeholder="Enter Password">
+                </div>
+                <div class="password-group">
+                    <div class="checkbox-group">
+                        <input type="checkbox">
+                        <label class="label">Remember Me</label>
+                    </div>
+                    <a href="" class="forget-password">Forget Password</a>
+                </div>
+                <button class="btn">Sign In</button>
+                <p class="no-account">Don't Have an Account ?<a class="link"> Sign Up</a></p>
+            </div>
+        </div>
+    </div>
 
     <section id="store">
         <h2>Store</h2>
@@ -51,7 +74,6 @@
             <p>$12.00</p>
             <button onclick="addToCart('Manga Title 2', 12.00)">Include</button>
         </div>
-        <!-- Add more products as needed -->
     </section>
 
     <section id="cart">
@@ -67,14 +89,13 @@
                 <input placeholder="Email" id="mail" type="email" class="input">
                 <textarea placeholder="Say Hello" rows="10" cols="30" id="message" name="message" class="textarea"></textarea>
                 <div class="button-container">
-                <div class="send-button">Send</div>
-                <div class="reset-button-container">
-                    <div id="reset-btn" class="reset-button">Reset</div>
+                    <div class="send-button">Send</div>
+                    <div class="reset-button-container">
+                        <div id="reset-btn" class="reset-button">Reset</div>
+                    </div>
                 </div>
             </div>
         </div>
-        </div>
     </div>
-
 </body>
 </html>

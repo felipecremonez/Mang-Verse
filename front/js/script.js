@@ -20,3 +20,33 @@ function updateCart() {
 
     totalElement.textContent = `Total: $${total.toFixed(2)}`;
 }
+
+//  Funções para abrir e fechar o modal
+document.addEventListener('DOMContentLoaded', () => {
+    const modal = document.getElementById('card-container');
+    const openModalBtn = document.getElementById('register');
+    const closeModalBtn = document.querySelector('.close-button');
+
+    // Function to open the modal
+    function openModal() {
+        modal.style.display = 'block';
+    }
+
+    // Function to close the modal
+    function closeModal() {
+        modal.style.display = 'none';
+    }
+
+    // Event listener to open the modal
+    openModalBtn.addEventListener('click', openModal);
+
+    // Event listener to close the modal
+    closeModalBtn.addEventListener('click', closeModal);
+
+    // Close the modal when clicking outside of the modal content
+    window.addEventListener('click', (event) => {
+        if (event.target == modal) {
+            closeModal();
+        }
+    });
+});
